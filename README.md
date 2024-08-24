@@ -15,31 +15,34 @@ Blog link: https://nj221102.github.io/Nitish-gSoc-24/
 
 During this period, significant progress was made on multiple fronts, including resolving critical issues and enhancing the functionality of the `data.table` package. Below is a summary of the work done:
 
+Apologies for the misunderstanding. Here's the corrected table with the pattern you described:
+
 | Issues | Pull Requests |
 | :------ |:--- |
 | [Export masks for all NSE-only constructs #5604](https://github.com/Rdatatable/data.table/issues/5604) | [#6125](https://github.com/Rdatatable/data.table/pull/6125) |
-| [patterns function missing #5277](https://github.com/Rdatatable/data.table/issues/5277) | [#6155](https://github.com/Rdatatable/data.table/pull/6155) |
-| [.NATURAL is missing from ?".N" #4930](https://github.com/Rdatatable/data.table/issues/4930) | [#6161](https://github.com/Rdatatable/data.table/pull/6161) |
-| [Query a non-existing element #5292](https://github.com/Rdatatable/data.table/issues/5292) | [#6162](https://github.com/Rdatatable/data.table/pull/6162) |
-| [Add a section to datatable-importing vignette#6037](https://github.com/Rdatatable/data.table/issues/6037) | [#6164](https://github.com/Rdatatable/data.table/pull/6164) |
-| [openmp documentation misses freadR.c file #5265](https://github.com/Rdatatable/data.table/issues/5265) | [#6179](https://github.com/Rdatatable/data.table/pull/6179) |
-| [dcast: add argument to error on "Aggregate function missing #5386](https://github.com/Rdatatable/data.table/issues/5386) | [#6181](https://github.com/Rdatatable/data.table/pull/6181) |
-| [C forder could take verbose argument #4533](https://github.com/Rdatatable/data.table/issues/4533) | [#6184](https://github.com/Rdatatable/data.table/pull/6184) |
-| [fwrite() should (possibly invisibly) return the file path #5706](https://github.com/Rdatatable/data.table/issues/5706) | [#6189](https://github.com/Rdatatable/data.table/pull/6189) |
-| [Suggestion: Warn when making integer column key #5074](https://github.com/Rdatatable/data.table/issues/5074) | [#6190](https://github.com/Rdatatable/data.table/pull/6190) |
-| [add examples of set function in documentation #5031](https://github.com/Rdatatable/data.table/issues/5031) | [#6193](https://github.com/Rdatatable/data.table/pull/6193) |
-| [Unexpected behavior in .BY #5389](https://github.com/Rdatatable/data.table/issues/5389) | [#6195](https://github.com/Rdatatable/data.table/pull/6195) |
-| [Improve the documentation for fromLast in unique #5130](https://github.com/Rdatatable/data.table/issues/5130) | [#6196](https://github.com/Rdatatable/data.table/pull/6196) |
-| [TRUE/FALSE and abbreviated variants T/F have different behavior #4846](https://github.com/Rdatatable/data.table/issues/4846) | [#6198](https://github.com/Rdatatable/data.table/pull/6198) |
-| [revdep issues caused when . and J are exported #6197](https://github.com/Rdatatable/data.table/issues/6197) | [#6200](https://github.com/Rdatatable/data.table/pull/6200) |
-| [shift wrong behavior for list columns #5188](https://github.com/Rdatatable/data.table/issues/5188) | [#6201](https://github.com/Rdatatable/data.table/pull/6201) |
-| [Be more outspoken on distinction between week and isoweek functions #3065](https://github.com/Rdatatable/data.table/issues/3065) | [#6207](https://github.com/Rdatatable/data.table/pull/6207) |
-| [setnames() errors silently ignored in full assignment (no 'old') #6236](https://github.com/Rdatatable/data.table/issues/6236) | [#6237](https://github.com/Rdatatable/data.table/pull/6237) |
-| [Issue with datat.table:: namespace appending (NSE) #5357](https://github.com/Rdatatable/data.table/issues/5357) | [#6273](https://github.com/Rdatatable/data.table/pull/6273) |
-| [rbindlist gives wrong results when applied objects with different units.#4541](https://github.com/Rdatatable/data.table/issues/4541) | [#6302](https://github.com/Rdatatable/data.table/pull/6302) |
-| [text labels for months / weekdays #1286](https://github.com/Rdatatable/data.table/issues/1286) | [#6309](https://github.com/Rdatatable/data.table/pull/6309) |
-| [error with set() or := NULL to a list column item #5526](https://github.com/Rdatatable/data.table/issues/5526) | [#6310](https://github.com/Rdatatable/data.table/pull/6310) |
-| [Document well how to flexibly pass functions in env= #6323](https://github.com/Rdatatable/data.table/issues/6323) | [#6336](https://github.com/Rdatatable/data.table/pull/6336) |
+| [patterns function missing #5277](https://github.com/Rdatatable/data.table/issues/5277) | [#6125](https://github.com/Rdatatable/data.table/pull/6125) |
+| [.NATURAL is missing from ?".N" #4930](https://github.com/Rdatatable/data.table/issues/4930) | [#6155](https://github.com/Rdatatable/data.table/pull/6155) |
+| [Query a non-existing element #5292](https://github.com/Rdatatable/data.table/issues/5292) | [#6161](https://github.com/Rdatatable/data.table/pull/6161) |
+| [Add a section to datatable-importing vignette#6037](https://github.com/Rdatatable/data.table/issues/6037) | [#6162](https://github.com/Rdatatable/data.table/pull/6162) |
+| [openmp documentation misses freadR.c file #5265](https://github.com/Rdatatable/data.table/issues/5265) | [#6164](https://github.com/Rdatatable/data.table/pull/6164) |
+| [dcast: add argument to error on "Aggregate function missing #5386](https://github.com/Rdatatable/data.table/issues/5386) | [#6179](https://github.com/Rdatatable/data.table/pull/6179) |
+| [C forder could take verbose argument #4533](https://github.com/Rdatatable/data.table/issues/4533) | [#6181](https://github.com/Rdatatable/data.table/pull/6181) |
+| [fwrite() should (possibly invisibly) return the file path #5706](https://github.com/Rdatatable/data.table/issues/5706) | [#6184](https://github.com/Rdatatable/data.table/pull/6184) |
+| [Suggestion: Warn when making integer column key #5074](https://github.com/Rdatatable/data.table/issues/5074) | [#6189](https://github.com/Rdatatable/data.table/pull/6189) |
+| [add examples of set function in documentation #5031](https://github.com/Rdatatable/data.table/issues/5031) | [#6190](https://github.com/Rdatatable/data.table/pull/6190) |
+| [Unexpected behavior in .BY #5389](https://github.com/Rdatatable/data.table/issues/5389) | [#6193](https://github.com/Rdatatable/data.table/pull/6193) |
+| [Improve the documentation for fromLast in unique #5130](https://github.com/Rdatatable/data.table/issues/5130) | [#6195](https://github.com/Rdatatable/data.table/pull/6195) |
+| [TRUE/FALSE and abbreviated variants T/F have different behavior #4846](https://github.com/Rdatatable/data.table/issues/4846) | [#6196](https://github.com/Rdatatable/data.table/pull/6196) |
+| [revdep issues caused when . and J are exported #6197](https://github.com/Rdatatable/data.table/issues/6197) | [#6198](https://github.com/Rdatatable/data.table/pull/6198) |
+| [shift wrong behavior for list columns #5188](https://github.com/Rdatatable/data.table/issues/5188) | [#6200](https://github.com/Rdatatable/data.table/pull/6200) |
+| [Be more outspoken on distinction between week and isoweek functions #3065](https://github.com/Rdatatable/data.table/issues/3065) | [#6201](https://github.com/Rdatatable/data.table/pull/6201) |
+| [setnames() errors silently ignored in full assignment (no 'old') #6236](https://github.com/Rdatatable/data.table/issues/6236) | [#6207](https://github.com/Rdatatable/data.table/pull/6207) |
+| [Issue with datat.table:: namespace appending (NSE) #5357](https://github.com/Rdatatable/data.table/issues/5357) | [#6237](https://github.com/Rdatatable/data.table/pull/6237) |
+| [rbindlist gives wrong results when applied objects with different units.#4541](https://github.com/Rdatatable/data.table/issues/4541) | [#6273](https://github.com/Rdatatable/data.table/pull/6273) |
+| [text labels for months / weekdays #1286](https://github.com/Rdatatable/data.table/issues/1286) | [#6302](https://github.com/Rdatatable/data.table/pull/6302) |
+| [error with set() or := NULL to a list column item #5526](https://github.com/Rdatatable/data.table/issues/5526) | [#6309](https://github.com/Rdatatable/data.table/pull/6309) |
+| [Document well how to flexibly pass functions in env= #6323](https://github.com/Rdatatable/data.table/issues/6323) | [#6310](https://github.com/Rdatatable/data.table/pull/6310) |
+| | [#6336](https://github.com/Rdatatable/data.table/pull/6336) |
 | | [#6360](https://github.com/Rdatatable/data.table/pull/6360) |
 
 ## **Overview**
