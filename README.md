@@ -1,10 +1,10 @@
 # GSoC 2024 Project Blog
 
-Blog link: nj221102.github.io/Nitish-gSoc-24/
+Blog link: https://nj221102.github.io/Nitish-gSoc-24/
 
 # Summary of my GSoC 2024
 ## Basic Info
-- **Name**: Nitish JHa
+- **Name**: Nitish Jha
 - **Email**: nitishj221102@gmail.com
 - **Github Username**: Nj221102
 - **Mentors**: Toby Dylan Hocking, Anirban chetia
