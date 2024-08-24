@@ -15,67 +15,32 @@ Blog link: https://nj221102.github.io/Nitish-gSoc-24/
 
 During this period, significant progress was made on multiple fronts, including resolving critical issues and enhancing the functionality of the `data.table` package. Below is a summary of the work done:
 
-- **Issues Summary:** Addressed issues, ranging from bug fixes to feature enhancements. These contributions helped improve the stability and efficiency of the `data.table` package.
-  
-- **Pull Requests Summary:** Submitted pull requests, focusing on implementing new features, refactoring existing code, and fixing bugs. These contributions were pivotal in refining the package's capabilities and ensuring it meets user needs. 
-
-
-### Issues Summary
-| Issues |
-| :------ |
-| [#5604](https://github.com/Rdatatable/data.table/issues/5604) |
-| [#5277](https://github.com/Rdatatable/data.table/issues/5277) |
-| [#4930](https://github.com/Rdatatable/data.table/issues/4930) |
-| [#5292](https://github.com/Rdatatable/data.table/issues/5292) |
-| [#6037](https://github.com/Rdatatable/data.table/issues/6037) |
-| [#5265](https://github.com/Rdatatable/data.table/issues/5265) |
-| [#5386](https://github.com/Rdatatable/data.table/issues/5386) |
-| [#4533](https://github.com/Rdatatable/data.table/issues/4533) |
-| [#5706](https://github.com/Rdatatable/data.table/issues/5706) |
-| [#5074](https://github.com/Rdatatable/data.table/issues/5074) |
-| [#5031](https://github.com/Rdatatable/data.table/issues/5031) |
-| [#5389](https://github.com/Rdatatable/data.table/issues/5389) |
-| [#5130](https://github.com/Rdatatable/data.table/issues/5130) |
-| [#4846](https://github.com/Rdatatable/data.table/issues/4846) |
-| [#6197](https://github.com/Rdatatable/data.table/issues/6197) |
-| [#5188](https://github.com/Rdatatable/data.table/issues/5188) |
-| [#3065](https://github.com/Rdatatable/data.table/issues/3065) |
-| [#6236](https://github.com/Rdatatable/data.table/issues/6236) |
-| [#5357](https://github.com/Rdatatable/data.table/issues/5357) |
-| [#4541](https://github.com/Rdatatable/data.table/issues/4541) |
-| [#1286](https://github.com/Rdatatable/data.table/issues/1286) |
-| [#5526](https://github.com/Rdatatable/data.table/issues/5526) |
-| [#6323](https://github.com/Rdatatable/data.table/issues/6323) |
-
----
-
-### Pull Requests Summary
-| Pull Requests |
-| :------ |
-| [#6125](https://github.com/Rdatatable/data.table/pull/6125) |
-| [#6155](https://github.com/Rdatatable/data.table/pull/6155) |
-| [#6161](https://github.com/Rdatatable/data.table/pull/6161) |
-| [#6162](https://github.com/Rdatatable/data.table/pull/6162) |
-| [#6164](https://github.com/Rdatatable/data.table/pull/6164) |
-| [#6179](https://github.com/Rdatatable/data.table/pull/6179) |
-| [#6181](https://github.com/Rdatatable/data.table/pull/6181) |
-| [#6184](https://github.com/Rdatatable/data.table/pull/6184) |
-| [#6189](https://github.com/Rdatatable/data.table/pull/6189) |
-| [#6190](https://github.com/Rdatatable/data.table/pull/6190) |
-| [#6193](https://github.com/Rdatatable/data.table/pull/6193) |
-| [#6195](https://github.com/Rdatatable/data.table/pull/6195) |
-| [#6196](https://github.com/Rdatatable/data.table/pull/6196) |
-| [#6198](https://github.com/Rdatatable/data.table/pull/6198) |
-| [#6200](https://github.com/Rdatatable/data.table/pull/6200) |
-| [#6201](https://github.com/Rdatatable/data.table/pull/6201) |
-| [#6207](https://github.com/Rdatatable/data.table/pull/6207) |
-| [#6237](https://github.com/Rdatatable/data.table/pull/6237) |
-| [#6273](https://github.com/Rdatatable/data.table/pull/6273) |
-| [#6302](https://github.com/Rdatatable/data.table/pull/6302) |
-| [#6309](https://github.com/Rdatatable/data.table/pull/6309) |
-| [#6310](https://github.com/Rdatatable/data.table/pull/6310) |
-| [#6336](https://github.com/Rdatatable/data.table/pull/6336) |
-| [#6360](https://github.com/Rdatatable/data.table/pull/6360) |
+| Issues | Pull Requests |
+| :------ |:--- |
+| [#5604](https://github.com/Rdatatable/data.table/issues/5604) | [#6125](https://github.com/Rdatatable/data.table/pull/6125) |
+| [#5277](https://github.com/Rdatatable/data.table/issues/5277) | [#6155](https://github.com/Rdatatable/data.table/pull/6155) |
+| [#4930](https://github.com/Rdatatable/data.table/issues/4930) | [#6161](https://github.com/Rdatatable/data.table/pull/6161) |
+| [#5292](https://github.com/Rdatatable/data.table/issues/5292) | [#6162](https://github.com/Rdatatable/data.table/pull/6162) |
+| [#6037](https://github.com/Rdatatable/data.table/issues/6037) | [#6164](https://github.com/Rdatatable/data.table/pull/6164) |
+| [#5265](https://github.com/Rdatatable/data.table/issues/5265) | [#6179](https://github.com/Rdatatable/data.table/pull/6179) |
+| [#5386](https://github.com/Rdatatable/data.table/issues/5386) | [#6181](https://github.com/Rdatatable/data.table/pull/6181) |
+| [#4533](https://github.com/Rdatatable/data.table/issues/4533) | [#6184](https://github.com/Rdatatable/data.table/pull/6184) |
+| [#5706](https://github.com/Rdatatable/data.table/issues/5706) | [#6189](https://github.com/Rdatatable/data.table/pull/6189) |
+| [#5074](https://github.com/Rdatatable/data.table/issues/5074) | [#6190](https://github.com/Rdatatable/data.table/pull/6190) |
+| [#5031](https://github.com/Rdatatable/data.table/issues/5031) | [#6193](https://github.com/Rdatatable/data.table/pull/6193) |
+| [#5389](https://github.com/Rdatatable/data.table/issues/5389) | [#6195](https://github.com/Rdatatable/data.table/pull/6195) |
+| [#5130](https://github.com/Rdatatable/data.table/issues/5130) | [#6196](https://github.com/Rdatatable/data.table/pull/6196) |
+| [#4846](https://github.com/Rdatatable/data.table/issues/4846) | [#6198](https://github.com/Rdatatable/data.table/pull/6198) |
+| [#6197](https://github.com/Rdatatable/data.table/issues/6197) | [#6200](https://github.com/Rdatatable/data.table/pull/6200) |
+| [#5188](https://github.com/Rdatatable/data.table/issues/5188) | [#6201](https://github.com/Rdatatable/data.table/pull/6201) |
+| [#3065](https://github.com/Rdatatable/data.table/issues/3065) | [#6207](https://github.com/Rdatatable/data.table/pull/6207) |
+| [#6236](https://github.com/Rdatatable/data.table/issues/6236) | [#6237](https://github.com/Rdatatable/data.table/pull/6237) |
+| [#5357](https://github.com/Rdatatable/data.table/issues/5357) | [#6273](https://github.com/Rdatatable/data.table/pull/6273) |
+| [#4541](https://github.com/Rdatatable/data.table/issues/4541) | [#6302](https://github.com/Rdatatable/data.table/pull/6302) |
+| [#1286](https://github.com/Rdatatable/data.table/issues/1286) | [#6309](https://github.com/Rdatatable/data.table/pull/6309) |
+| [#5526](https://github.com/Rdatatable/data.table/issues/5526) | [#6310](https://github.com/Rdatatable/data.table/pull/6310) |
+| [#6323](https://github.com/Rdatatable/data.table/issues/6323) | [#6336](https://github.com/Rdatatable/data.table/pull/6336) |
+| | [#6360](https://github.com/Rdatatable/data.table/pull/6360) |
 
 ## **Overview**
 
