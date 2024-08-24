@@ -17,29 +17,29 @@ During this period, significant progress was made on multiple fronts, including 
 
 | Issues | Pull Requests |
 | :------ |:--- |
-| [#5604](https://github.com/Rdatatable/data.table/issues/5604) | [#6125](https://github.com/Rdatatable/data.table/pull/6125) |
-| [#5277](https://github.com/Rdatatable/data.table/issues/5277) | [#6155](https://github.com/Rdatatable/data.table/pull/6155) |
-| [#4930](https://github.com/Rdatatable/data.table/issues/4930) | [#6161](https://github.com/Rdatatable/data.table/pull/6161) |
-| [#5292](https://github.com/Rdatatable/data.table/issues/5292) | [#6162](https://github.com/Rdatatable/data.table/pull/6162) |
-| [#6037](https://github.com/Rdatatable/data.table/issues/6037) | [#6164](https://github.com/Rdatatable/data.table/pull/6164) |
-| [#5265](https://github.com/Rdatatable/data.table/issues/5265) | [#6179](https://github.com/Rdatatable/data.table/pull/6179) |
-| [#5386](https://github.com/Rdatatable/data.table/issues/5386) | [#6181](https://github.com/Rdatatable/data.table/pull/6181) |
-| [#4533](https://github.com/Rdatatable/data.table/issues/4533) | [#6184](https://github.com/Rdatatable/data.table/pull/6184) |
-| [#5706](https://github.com/Rdatatable/data.table/issues/5706) | [#6189](https://github.com/Rdatatable/data.table/pull/6189) |
-| [#5074](https://github.com/Rdatatable/data.table/issues/5074) | [#6190](https://github.com/Rdatatable/data.table/pull/6190) |
-| [#5031](https://github.com/Rdatatable/data.table/issues/5031) | [#6193](https://github.com/Rdatatable/data.table/pull/6193) |
-| [#5389](https://github.com/Rdatatable/data.table/issues/5389) | [#6195](https://github.com/Rdatatable/data.table/pull/6195) |
-| [#5130](https://github.com/Rdatatable/data.table/issues/5130) | [#6196](https://github.com/Rdatatable/data.table/pull/6196) |
-| [#4846](https://github.com/Rdatatable/data.table/issues/4846) | [#6198](https://github.com/Rdatatable/data.table/pull/6198) |
-| [#6197](https://github.com/Rdatatable/data.table/issues/6197) | [#6200](https://github.com/Rdatatable/data.table/pull/6200) |
-| [#5188](https://github.com/Rdatatable/data.table/issues/5188) | [#6201](https://github.com/Rdatatable/data.table/pull/6201) |
-| [#3065](https://github.com/Rdatatable/data.table/issues/3065) | [#6207](https://github.com/Rdatatable/data.table/pull/6207) |
-| [#6236](https://github.com/Rdatatable/data.table/issues/6236) | [#6237](https://github.com/Rdatatable/data.table/pull/6237) |
-| [#5357](https://github.com/Rdatatable/data.table/issues/5357) | [#6273](https://github.com/Rdatatable/data.table/pull/6273) |
-| [#4541](https://github.com/Rdatatable/data.table/issues/4541) | [#6302](https://github.com/Rdatatable/data.table/pull/6302) |
-| [#1286](https://github.com/Rdatatable/data.table/issues/1286) | [#6309](https://github.com/Rdatatable/data.table/pull/6309) |
-| [#5526](https://github.com/Rdatatable/data.table/issues/5526) | [#6310](https://github.com/Rdatatable/data.table/pull/6310) |
-| [#6323](https://github.com/Rdatatable/data.table/issues/6323) | [#6336](https://github.com/Rdatatable/data.table/pull/6336) |
+| [Export masks for all NSE-only constructs #5604](https://github.com/Rdatatable/data.table/issues/5604) | [#6125](https://github.com/Rdatatable/data.table/pull/6125) |
+| [patterns function missing #5277](https://github.com/Rdatatable/data.table/issues/5277) | [#6155](https://github.com/Rdatatable/data.table/pull/6155) |
+| [.NATURAL is missing from ?".N" #4930](https://github.com/Rdatatable/data.table/issues/4930) | [#6161](https://github.com/Rdatatable/data.table/pull/6161) |
+| [Query a non-existing element #5292](https://github.com/Rdatatable/data.table/issues/5292) | [#6162](https://github.com/Rdatatable/data.table/pull/6162) |
+| [Add a section to datatable-importing vignette#6037](https://github.com/Rdatatable/data.table/issues/6037) | [#6164](https://github.com/Rdatatable/data.table/pull/6164) |
+| [openmp documentation misses freadR.c file #5265](https://github.com/Rdatatable/data.table/issues/5265) | [#6179](https://github.com/Rdatatable/data.table/pull/6179) |
+| [dcast: add argument to error on "Aggregate function missing #5386](https://github.com/Rdatatable/data.table/issues/5386) | [#6181](https://github.com/Rdatatable/data.table/pull/6181) |
+| [C forder could take verbose argument #4533](https://github.com/Rdatatable/data.table/issues/4533) | [#6184](https://github.com/Rdatatable/data.table/pull/6184) |
+| [fwrite() should (possibly invisibly) return the file path #5706](https://github.com/Rdatatable/data.table/issues/5706) | [#6189](https://github.com/Rdatatable/data.table/pull/6189) |
+| [Suggestion: Warn when making integer column key #5074](https://github.com/Rdatatable/data.table/issues/5074) | [#6190](https://github.com/Rdatatable/data.table/pull/6190) |
+| [add examples of set function in documentation #5031](https://github.com/Rdatatable/data.table/issues/5031) | [#6193](https://github.com/Rdatatable/data.table/pull/6193) |
+| [Unexpected behavior in .BY #5389](https://github.com/Rdatatable/data.table/issues/5389) | [#6195](https://github.com/Rdatatable/data.table/pull/6195) |
+| [Improve the documentation for fromLast in unique #5130](https://github.com/Rdatatable/data.table/issues/5130) | [#6196](https://github.com/Rdatatable/data.table/pull/6196) |
+| [TRUE/FALSE and abbreviated variants T/F have different behavior #4846](https://github.com/Rdatatable/data.table/issues/4846) | [#6198](https://github.com/Rdatatable/data.table/pull/6198) |
+| [revdep issues caused when . and J are exported #6197](https://github.com/Rdatatable/data.table/issues/6197) | [#6200](https://github.com/Rdatatable/data.table/pull/6200) |
+| [shift wrong behavior for list columns #5188](https://github.com/Rdatatable/data.table/issues/5188) | [#6201](https://github.com/Rdatatable/data.table/pull/6201) |
+| [Be more outspoken on distinction between week and isoweek functions #3065](https://github.com/Rdatatable/data.table/issues/3065) | [#6207](https://github.com/Rdatatable/data.table/pull/6207) |
+| [setnames() errors silently ignored in full assignment (no 'old') #6236](https://github.com/Rdatatable/data.table/issues/6236) | [#6237](https://github.com/Rdatatable/data.table/pull/6237) |
+| [Issue with datat.table:: namespace appending (NSE) #5357](https://github.com/Rdatatable/data.table/issues/5357) | [#6273](https://github.com/Rdatatable/data.table/pull/6273) |
+| [rbindlist gives wrong results when applied objects with different units.#4541](https://github.com/Rdatatable/data.table/issues/4541) | [#6302](https://github.com/Rdatatable/data.table/pull/6302) |
+| [text labels for months / weekdays #1286](https://github.com/Rdatatable/data.table/issues/1286) | [#6309](https://github.com/Rdatatable/data.table/pull/6309) |
+| [error with set() or := NULL to a list column item #5526](https://github.com/Rdatatable/data.table/issues/5526) | [#6310](https://github.com/Rdatatable/data.table/pull/6310) |
+| [Document well how to flexibly pass functions in env= #6323](https://github.com/Rdatatable/data.table/issues/6323) | [#6336](https://github.com/Rdatatable/data.table/pull/6336) |
 | | [#6360](https://github.com/Rdatatable/data.table/pull/6360) |
 
 ## **Overview**
