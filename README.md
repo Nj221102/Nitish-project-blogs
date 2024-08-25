@@ -42,8 +42,8 @@ Apologies for the misunderstanding. Here's the corrected table with the pattern 
 | [openmp documentation misses freadR.c file #5265](https://github.com/Rdatatable/data.table/issues/5265) | [#6162](https://github.com/Rdatatable/data.table/pull/6162) |
 | [C forder could take verbose argument #4533](https://github.com/Rdatatable/data.table/issues/4533) | [#6179](https://github.com/Rdatatable/data.table/pull/6179) |
 | [fwrite() should (possibly invisibly) return the file path #5706](https://github.com/Rdatatable/data.table/issues/5706) | [#6181](https://github.com/Rdatatable/data.table/pull/6181) |
-| [fwrite() should (possibly invisibly) return the file path #5706](https://github.com/Rdatatable/data.table/issues/5706) | [#6181](https://github.com/Rdatatable/data.table/pull/6181) |
-| [fwrite() should (possibly invisibly) return the file path #5706](https://github.com/Rdatatable/data.table/issues/5706) | [#6181](https://github.com/Rdatatable/data.table/pull/6181) |
+| [Add new argument skip_absent= for colnamesInt() #6067](https://github.com/Rdatatable/data.table/issues/6067) | [#6068](https://github.com/Rdatatable/data.table/pull/6068) |
+| [Use selective imports #5970](https://github.com/Rdatatable/data.table/issues/5970) | [#5988](https://github.com/Rdatatable/data.table/pull/5988) |
 
 
 ## **Overview**
@@ -54,7 +54,7 @@ As a student, balancing academic responsibilities with my commitment to this pro
 
 Overall, my first Google Summer of Code has been about more than just writing code; it’s been a journey of learning, adaptation, and growth. I’m eager to apply what I’ve learned to continue improving the project and to contribute more to the open-source community.
 
-**Acknowledgments**
+## **Acknowledgments**
 
 I would like to express my deepest gratitude to my mentors, Toby Dylan Hocking and Anirban Chetia. Throughout this summer, they have been invaluable guides, patiently helping me navigate the complexities of coding and consistently encouraging me to think critically and write well-structured code. Their quick responses and insightful feedback have been instrumental in my learning process, often shedding light on issues I hadn’t even considered.
 
