@@ -22,12 +22,9 @@ Apologies for the misunderstanding. Here's the corrected table with the pattern 
 | [Export masks for all NSE-only constructs #5604](https://github.com/Rdatatable/data.table/issues/5604) | [#6125](https://github.com/Rdatatable/data.table/pull/6125) |
 | [patterns function missing #5277](https://github.com/Rdatatable/data.table/issues/5277) | [#6125](https://github.com/Rdatatable/data.table/pull/6125) |
 | [.NATURAL is missing from ?".N" #4930](https://github.com/Rdatatable/data.table/issues/4930) | [#6155](https://github.com/Rdatatable/data.table/pull/6155) |
-| [Query a non-existing element #5292](https://github.com/Rdatatable/data.table/issues/5292) | [#6161](https://github.com/Rdatatable/data.table/pull/6161) |
-| [Add a section to datatable-importing vignette#6037](https://github.com/Rdatatable/data.table/issues/6037) | [#6162](https://github.com/Rdatatable/data.table/pull/6162) |
-| [openmp documentation misses freadR.c file #5265](https://github.com/Rdatatable/data.table/issues/5265) | [#6164](https://github.com/Rdatatable/data.table/pull/6164) |
-| [dcast: add argument to error on "Aggregate function missing #5386](https://github.com/Rdatatable/data.table/issues/5386) | [#6179](https://github.com/Rdatatable/data.table/pull/6179) |
-| [C forder could take verbose argument #4533](https://github.com/Rdatatable/data.table/issues/4533) | [#6181](https://github.com/Rdatatable/data.table/pull/6181) |
-| [fwrite() should (possibly invisibly) return the file path #5706](https://github.com/Rdatatable/data.table/issues/5706) | [#6184](https://github.com/Rdatatable/data.table/pull/6184) |
+| [Query a non-existing element #5292](https://github.com/Rdatatable/data.table/issues/5292) | [#6184](https://github.com/Rdatatable/data.table/pull/6184) |
+| [Add a section to datatable-importing vignette#6037](https://github.com/Rdatatable/data.table/issues/6037) | [#6161](https://github.com/Rdatatable/data.table/pull/6161) |
+| [dcast: add argument to error on "Aggregate function missing #5386](https://github.com/Rdatatable/data.table/issues/5386) | [#6164](https://github.com/Rdatatable/data.table/pull/6164) |
 | [Suggestion: Warn when making integer column key #5074](https://github.com/Rdatatable/data.table/issues/5074) | [#6189](https://github.com/Rdatatable/data.table/pull/6189) |
 | [add examples of set function in documentation #5031](https://github.com/Rdatatable/data.table/issues/5031) | [#6190](https://github.com/Rdatatable/data.table/pull/6190) |
 | [Unexpected behavior in .BY #5389](https://github.com/Rdatatable/data.table/issues/5389) | [#6193](https://github.com/Rdatatable/data.table/pull/6193) |
@@ -42,6 +39,9 @@ Apologies for the misunderstanding. Here's the corrected table with the pattern 
 | [text labels for months / weekdays #1286](https://github.com/Rdatatable/data.table/issues/1286) | [#6302](https://github.com/Rdatatable/data.table/pull/6302) |
 | [error with set() or := NULL to a list column item #5526](https://github.com/Rdatatable/data.table/issues/5526) | [#6309](https://github.com/Rdatatable/data.table/pull/6309) |
 | [Document well how to flexibly pass functions in env= #6323](https://github.com/Rdatatable/data.table/issues/6323) | [#6310](https://github.com/Rdatatable/data.table/pull/6310) |
+| [openmp documentation misses freadR.c file #5265](https://github.com/Rdatatable/data.table/issues/5265) | [#6164](https://github.com/Rdatatable/data.table/pull/6164) |
+| [C forder could take verbose argument #4533](https://github.com/Rdatatable/data.table/issues/4533) | [#6181](https://github.com/Rdatatable/data.table/pull/6181) |
+| [fwrite() should (possibly invisibly) return the file path #5706](https://github.com/Rdatatable/data.table/issues/5706) | [#6184](https://github.com/Rdatatable/data.table/pull/6184) |
 | | [#6336](https://github.com/Rdatatable/data.table/pull/6336) |
 | | [#6360](https://github.com/Rdatatable/data.table/pull/6360) |
 
