@@ -30,18 +30,18 @@ Apologies for the misunderstanding. Here's the corrected table with the pattern 
 | [Unexpected behavior in .BY #5389](https://github.com/Rdatatable/data.table/issues/5389) | [#6193](https://github.com/Rdatatable/data.table/pull/6193) |
 | [Improve the documentation for fromLast in unique #5130](https://github.com/Rdatatable/data.table/issues/5130) | [#6195](https://github.com/Rdatatable/data.table/pull/6195) |
 | [TRUE/FALSE and abbreviated variants T/F have different behavior #4846](https://github.com/Rdatatable/data.table/issues/4846) | [#6196](https://github.com/Rdatatable/data.table/pull/6196) |
-| [revdep issues caused when . and J are exported #6197](https://github.com/Rdatatable/data.table/issues/6197) | [#6198](https://github.com/Rdatatable/data.table/pull/6198) |
-| [shift wrong behavior for list columns #5188](https://github.com/Rdatatable/data.table/issues/5188) | [#6200](https://github.com/Rdatatable/data.table/pull/6200) |
-| [Be more outspoken on distinction between week and isoweek functions #3065](https://github.com/Rdatatable/data.table/issues/3065) | [#6201](https://github.com/Rdatatable/data.table/pull/6201) |
-| [setnames() errors silently ignored in full assignment (no 'old') #6236](https://github.com/Rdatatable/data.table/issues/6236) | [#6207](https://github.com/Rdatatable/data.table/pull/6207) |
-| [Issue with datat.table:: namespace appending (NSE) #5357](https://github.com/Rdatatable/data.table/issues/5357) | [#6237](https://github.com/Rdatatable/data.table/pull/6237) |
-| [rbindlist gives wrong results when applied objects with different units.#4541](https://github.com/Rdatatable/data.table/issues/4541) | [#6273](https://github.com/Rdatatable/data.table/pull/6273) |
-| [text labels for months / weekdays #1286](https://github.com/Rdatatable/data.table/issues/1286) | [#6302](https://github.com/Rdatatable/data.table/pull/6302) |
-| [error with set() or := NULL to a list column item #5526](https://github.com/Rdatatable/data.table/issues/5526) | [#6309](https://github.com/Rdatatable/data.table/pull/6309) |
-| [Document well how to flexibly pass functions in env= #6323](https://github.com/Rdatatable/data.table/issues/6323) | [#6310](https://github.com/Rdatatable/data.table/pull/6310) |
-| [openmp documentation misses freadR.c file #5265](https://github.com/Rdatatable/data.table/issues/5265) | [#6164](https://github.com/Rdatatable/data.table/pull/6164) |
-| [C forder could take verbose argument #4533](https://github.com/Rdatatable/data.table/issues/4533) | [#6181](https://github.com/Rdatatable/data.table/pull/6181) |
-| [fwrite() should (possibly invisibly) return the file path #5706](https://github.com/Rdatatable/data.table/issues/5706) | [#6184](https://github.com/Rdatatable/data.table/pull/6184) |
+| [revdep issues caused when . and J are exported #6197](https://github.com/Rdatatable/data.table/issues/6197) | [#6198](https://github.com/Rdatatable/data.table/pull/6198), [#6200](https://github.com/Rdatatable/data.table/pull/6200),  [#6207](https://github.com/Rdatatable/data.table/pull/6207) |
+| [shift wrong behavior for list columns #5188](https://github.com/Rdatatable/data.table/issues/5188) | [#6201](https://github.com/Rdatatable/data.table/pull/6201) |
+| [Be more outspoken on distinction between week and isoweek functions #3065](https://github.com/Rdatatable/data.table/issues/3065) | [#6237](https://github.com/Rdatatable/data.table/pull/6237) |
+| [setnames() errors silently ignored in full assignment (no 'old') #6236](https://github.com/Rdatatable/data.table/issues/6236) | [#6273](https://github.com/Rdatatable/data.table/pull/6273) |
+| [Issue with datat.table:: namespace appending (NSE) #5357](https://github.com/Rdatatable/data.table/issues/5357) | [#6302](https://github.com/Rdatatable/data.table/pull/6302) |
+| [rbindlist gives wrong results when applied objects with different units.#4541](https://github.com/Rdatatable/data.table/issues/4541) | [#6309](https://github.com/Rdatatable/data.table/pull/6309) |
+| [text labels for months / weekdays #1286](https://github.com/Rdatatable/data.table/issues/1286) | [#6310](https://github.com/Rdatatable/data.table/pull/6310) |
+| [error with set() or := NULL to a list column item #5526](https://github.com/Rdatatable/data.table/issues/5526) | [#6336](https://github.com/Rdatatable/data.table/pull/6336) |
+| [Document well how to flexibly pass functions in env= #6323](https://github.com/Rdatatable/data.table/issues/6323) | [#6360](https://github.com/Rdatatable/data.table/pull/6360) |
+| [openmp documentation misses freadR.c file #5265](https://github.com/Rdatatable/data.table/issues/5265) | [#6162](https://github.com/Rdatatable/data.table/pull/6162) |
+| [C forder could take verbose argument #4533](https://github.com/Rdatatable/data.table/issues/4533) | [#6179](https://github.com/Rdatatable/data.table/pull/6179) |
+| [fwrite() should (possibly invisibly) return the file path #5706](https://github.com/Rdatatable/data.table/issues/5706) | [#6181](https://github.com/Rdatatable/data.table/pull/6181) |
 | | [#6336](https://github.com/Rdatatable/data.table/pull/6336) |
 | | [#6360](https://github.com/Rdatatable/data.table/pull/6360) |
 
