@@ -20,8 +20,6 @@ comments: true
 
 During this period, significant progress was made on multiple fronts, including resolving critical issues and enhancing the functionality of the `data.table` package. Below is a summary of the work done:
 
-Apologies for the misunderstanding. Here's the corrected table with the pattern you described:
-
 | Issues | Pull Requests |
 | :------ |:--- |
 | [Export masks for all NSE-only constructs #5604](https://github.com/Rdatatable/data.table/issues/5604) | [#6125](https://github.com/Rdatatable/data.table/pull/6125) |
