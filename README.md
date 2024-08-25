@@ -42,8 +42,9 @@ Apologies for the misunderstanding. Here's the corrected table with the pattern 
 | [openmp documentation misses freadR.c file #5265](https://github.com/Rdatatable/data.table/issues/5265) | [#6162](https://github.com/Rdatatable/data.table/pull/6162) |
 | [C forder could take verbose argument #4533](https://github.com/Rdatatable/data.table/issues/4533) | [#6179](https://github.com/Rdatatable/data.table/pull/6179) |
 | [fwrite() should (possibly invisibly) return the file path #5706](https://github.com/Rdatatable/data.table/issues/5706) | [#6181](https://github.com/Rdatatable/data.table/pull/6181) |
-| | [#6336](https://github.com/Rdatatable/data.table/pull/6336) |
-| | [#6360](https://github.com/Rdatatable/data.table/pull/6360) |
+| [fwrite() should (possibly invisibly) return the file path #5706](https://github.com/Rdatatable/data.table/issues/5706) | [#6181](https://github.com/Rdatatable/data.table/pull/6181) |
+| [fwrite() should (possibly invisibly) return the file path #5706](https://github.com/Rdatatable/data.table/issues/5706) | [#6181](https://github.com/Rdatatable/data.table/pull/6181) |
+
 
 ## **Overview**
 
@@ -52,3 +53,11 @@ Being part of Google Summer of Code this year has been an incredible experience.
 As a student, balancing academic responsibilities with my commitment to this project has been challenging, yet rewarding. The experience taught me valuable time management skills, as I dedicated evenings and weekends to contributing to the project. The support and flexibility offered by my mentor were essential in helping me navigate these challenges.
 
 Overall, my first Google Summer of Code has been about more than just writing code; it’s been a journey of learning, adaptation, and growth. I’m eager to apply what I’ve learned to continue improving the project and to contribute more to the open-source community.
+
+**Acknowledgments**
+
+I would like to express my deepest gratitude to my mentors, Toby Dylan Hocking and Anirban Chetia. Throughout this summer, they have been invaluable guides, patiently helping me navigate the complexities of coding and consistently encouraging me to think critically and write well-structured code. Their quick responses and insightful feedback have been instrumental in my learning process, often shedding light on issues I hadn’t even considered.
+
+The data.table community has also been a tremendous support, generously providing guidance and sharing their wealth of knowledge. Their feedback has helped me refine my approach and better understand the intricacies of the project. I truly appreciate everyone's patience and encouragement, which have been a constant source of motivation throughout this journey.
+
+Lastly, I want to thank my fellow GSoC contributors for their camaraderie and support. It’s been a great experience working alongside such a talented and supportive group.
