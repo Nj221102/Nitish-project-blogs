@@ -1,14 +1,22 @@
 ---
 layout: page
-title: About SOB25 & Shopstr
-subtitle: "⚡ Building the future of Bitcoin payments"
+title: About SOB25 Academic Project
+subtitle: "BOLT 12 and Greenlight Integration in Shopstr"
 cover-img: /assets/img/path.jpg
-tags: [About, SOB25, Bitcoin, Shopstr, Lightning Network]
+tags: [About, SOB25, Academic-Project, BOLT-12, Greenlight]
 ---
 
-## 🚀 Summer of Bitcoin 2025
+## 🎓 Academic Project Information
 
-I'm **Nitish Jha**, a SOB25 participant working on revolutionizing e-commerce payments through Bitcoin Lightning Network integration with Shopstr.
+**Student:** Nitish Jha  
+**Institution:** Polaris School of Technology (Starex University)  
+**Program:** B.Tech Computer Science  
+**Academic Level:** 2nd Year (2nd Semester)  
+**Project Duration:** May 15 - August 15, 2025  
+
+## 📋 Project Synopsis
+
+This Summer of Bitcoin 2025 project creates a **non-custodial payment alternative** to Shopstr's current Cashu payment system. The implementation allows users to utilize Greenlight nodes for creating BOLT 12 offers linked to BIP-353 usernames like `user@shopstr.store`, enabling direct payment reception without custodial intermediaries.
 
 ### Technical Objectives
 
@@ -19,17 +27,17 @@ I'm **Nitish Jha**, a SOB25 participant working on revolutionizing e-commerce pa
 ### Current Implementation Status
 
 **🔧 Technical Architecture:**
-- **Backend Services:** Go microservices with gRPC communication
-- **Lightning Integration:** Greenlight node management and BOLT protocol compliance  
-- **DNS Infrastructure:** BIP-353 compliant username system with DNSSEC automation
-- **Security Framework:** Non-custodial key management with in-memory processing
+- **DNS Backend:** Node.js with Express.js framework (✅ Complete)
+- **Greenlight Backend:** Python with FastAPI (🚧 70% Complete)  
+- **Frontend UI:** Next.js integration with Shopstr (📋 Planned)
+- **Security Framework:** Non-custodial key management with AES-256 encryption
 
 **📊 Development Progress:**
 - ✅ **DNS Management Infrastructure** - Production deployment ready
-- 🚧 **Lightning Payment Core** - 70% implementation complete  
-- 🚧 **Real-time State Management** - WebSocket and Redis Pub/Sub integration
-- 📋 **Frontend Integration** - Next development phase
-- 🔐 **Security Audit** - Scheduled for completion phase
+- 🚧 **Greenlight Backend Services** - Node registration and BOLT 12 generation complete  
+- 📋 **Frontend Authentication Gateway** - Next development phase (July 10-23)
+- � **Wallet Dashboard Implementation** - Scheduled for weeks 11-12
+- 🔐 **Final Integration and Testing** - August 7-15
 
 ### 🛠️ Key Innovations
 

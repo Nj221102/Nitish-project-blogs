@@ -1,15 +1,16 @@
-name: Beautiful Jekyll CI
+name: SOB25 Blog CI
 on: [push, pull_request]
 jobs:
   build:
-    name: Build Jekyll
+    name: Build Jekyll Site
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3'
+          ruby-version: '3.1'
+          bundler-cache: true
       - name: Install dependencies
-        run: bundle install && bundle exec appraisal install
+        run: bundle install
       - name: Build site
-        run: bundle exec appraisal jekyll build --future
+        run: bundle exec jekyll build --future
