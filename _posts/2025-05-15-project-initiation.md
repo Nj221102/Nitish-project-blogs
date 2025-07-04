@@ -104,69 +104,19 @@ This project develops a non-custodial payment alternative to Shopstr's current C
 
 ### DNS Backend API Structure
 
-**Endpoint:** `POST /register-dns`
-```json
-{
-  "username": "user",
-  "domain": "shopstr.store", 
-  "bolt12_offer": "lno1...",
-  "dnssec_enabled": true
-}
-```
+**Primary Endpoint:** POST /register-dns accepts username, domain, BOLT12 offer, and DNSSEC preference parameters. The system validates input data using comprehensive Joi schemas and queues the DNS registration request for asynchronous processing.
 
-**Response (Queued for Processing):**
-```json
-{
-  "status": "queued",
-  "job_id": "dns-reg-1234567890",
-  "status_url": "/api/dns/status/dns-reg-1234567890",
-  "estimated_completion": "2-5 minutes"
-}
-```
+**Asynchronous Response Model:** Instead of blocking operations, the API immediately returns a unique job identifier with estimated completion time ranging from 2-5 minutes. This approach ensures scalability and prevents timeout issues during DNS propagation delays.
 
-**Status Check Endpoint:** `GET /status/{job_id}`
-```json
-{
-  "job_id": "dns-reg-1234567890",
-  "status": "completed",
-  "progress": 100,
-  "result": {
-    "username": "user.shopstr.store",
-    "dns_record_id": "cf-rec-abc123",
-    "bolt12_offer": "lno1..."
-  },
-  "created_at": "2025-07-02T12:00:00Z",
-  "completed_at": "2025-07-02T12:02:30Z"
-}
-```
+**Status Tracking System:** GET /status/{job_id} endpoint provides real-time monitoring of DNS registration progress. The system tracks job lifecycle from queued to processing to completed states, with detailed progress indicators and comprehensive result metadata including DNS record identifiers and completion timestamps.
 
 ### Greenlight Backend API Design
 
-**Node Registration:** `POST /register-node`
-```json
-{
-  "seed_phrase": "abandon abandon abandon...",
-  "passphrase": "optional_passphrase"
-}
-```
+**Node Registration Endpoint:** POST /register-node processes BIP-39 seed phrases with optional passphrases for enhanced security. The system generates cryptographic node credentials while maintaining zero server-side storage of sensitive seed data.
 
-**Username Registration:** `POST /register-username`  
-```json
-{
-  "node_id": "03a1b2c3...",
-  "username": "alice",
-  "domain": "shopstr.store"
-}
-```
+**Username Registration Process:** POST /register-username creates unique Lightning Address-style identifiers by combining node identifiers with user-selected usernames and domain specifications. This endpoint integrates directly with the DNS backend for automated TXT record creation.
 
-**Payment Processing:** `POST /pay`
-```json
-{
-  "node_id": "03a1b2c3...",
-  "bolt12_offer": "lno1...",
-  "amount_msat": 100000
-}
-```
+**Payment Processing Interface:** POST /pay endpoint facilitates Lightning Network transactions using BOLT 12 offers with specified amounts in millisatoshi units. The system provides comprehensive payment status tracking and error handling for failed transaction attempts.
 
 ### Security Implementation
 
@@ -196,21 +146,15 @@ This project develops a non-custodial payment alternative to Shopstr's current C
 - **Performance:** Load testing and optimization
 
 ### System Integration Flow
-```
-1. User creates BIP-39 seed → Client-side generation
-2. Node registration → Greenlight backend  
-3. Username selection → BOLT 12 offer generation
-4. DNS registration request → Redis queue job creation
-5. Asynchronous processing → DNS record + DNSSEC verification
-6. Status polling → Real-time progress updates via API
-7. Completion notification → WebSocket real-time updates
-```
+
+**Multi-Stage Processing Pipeline:**
+The system implements a sophisticated seven-stage workflow beginning with client-side BIP-39 seed generation and progressing through Greenlight node registration, BOLT 12 offer creation, and asynchronous DNS queue processing. Each stage includes comprehensive error handling and rollback mechanisms to ensure data consistency and user experience reliability.
 
 **Enhanced Workflow Features:**
-- **Non-blocking Operations:** Immediate API responses with job tracking
-- **Progress Monitoring:** Real-time status updates (0-100% completion)
-- **Error Recovery:** Automatic retries with exponential backoff
-- **Horizontal Scaling:** Distributed queue workers for high availability
+- **Non-blocking Operations:** Immediate API responses with comprehensive job tracking eliminate user wait times during DNS propagation delays
+- **Progress Monitoring:** Real-time status updates provide granular completion percentages from initial request to final DNS record activation
+- **Error Recovery:** Intelligent retry mechanisms with exponential backoff handle transient failures in DNS propagation and DNSSEC verification
+- **Horizontal Scaling:** Distributed queue workers enable processing of thousands of concurrent DNS registrations across multiple server instances
 
 ### Frontend User Experience
 - **Signup Flow:** BIP-39 seed display with security warnings
@@ -239,34 +183,17 @@ This project serves as both an academic capstone and a practical contribution to
 ## DNS API Production Features
 
 **TypeScript Architecture Benefits:**
-- **Type Safety:** Full compile-time type checking prevents runtime errors
-- **Developer Experience:** Enhanced IDE support with autocomplete and refactoring
-- **Code Quality:** Structured error handling with typed error responses
-- **Maintainability:** Self-documenting code with interfaces and type definitions
+- **Type Safety:** Comprehensive compile-time type checking eliminates runtime errors through strict interface definitions and type validation across all API endpoints and data structures.
+- **Developer Experience:** Enhanced IDE support provides intelligent autocomplete, real-time error detection, and automated refactoring capabilities for improved development velocity.
+- **Code Quality:** Self-documenting interfaces and type definitions create maintainable codebases with clear data contracts between system components.
+- **Error Prevention:** Static type analysis catches potential bugs during development phase, reducing production issues and improving overall system reliability.
 
-**Queue System Implementation:**
-```typescript
-// Redis Bull Queue Configuration
-const dnsQueue = new Queue('dns-registration', {
-  redis: { host: 'localhost', port: 6379 },
-  defaultJobOptions: {
-    attempts: 3,
-    backoff: { type: 'exponential', delay: 2000 },
-    removeOnComplete: 100,
-    removeOnFail: 50
-  }
-});
+**Queue System Architecture:**
+The Redis Bull Queue implementation provides enterprise-grade job processing with configurable retry mechanisms, exponential backoff strategies, and automatic job cleanup. The system maintains separate queues for different operation types while supporting distributed worker processes for horizontal scaling. Job persistence ensures reliability during system restarts, while comprehensive monitoring provides operational visibility into queue health and processing statistics.
 
-// Job Progress Tracking
-await job.progress(40); // DNS record creation
-await job.progress(70); // Global propagation verification  
-await job.progress(90); // DNSSEC signing
-await job.progress(100); // Completion
-```
-
-**Security and Monitoring:**
-- **Rate Limiting:** 10 requests per 15-minute window per IP
-- **Input Validation:** Joi schemas for comprehensive data validation
-- **Health Monitoring:** Real-time system status checks for Redis, Cloudflare, and queue
-- **Error Tracking:** Structured logging with Winston for production debugging
-- **API Authentication:** Bearer token validation for all endpoints
+**Security and Monitoring Framework:**
+- **Rate Limiting:** IP-based request throttling prevents abuse with configurable time windows and request limits, ensuring fair resource allocation across all users.
+- **Input Validation:** Comprehensive data sanitization using Joi schemas validates all incoming requests, preventing injection attacks and ensuring data integrity.
+- **Health Monitoring:** Real-time system status verification checks Redis connectivity, Cloudflare API availability, and queue processing capacity with automated alerting for degraded services.
+- **Error Tracking:** Structured logging with Winston provides detailed error tracking, performance metrics, and operational insights for production debugging and optimization.
+- **API Authentication:** Bearer token validation ensures secure access control with session management and proper authorization handling across all endpoints.
