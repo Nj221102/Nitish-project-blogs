@@ -32,11 +32,9 @@ This project develops a non-custodial payment alternative to Shopstr's current C
 ### Three-Tier System Architecture
 
 **1. DNS Backend Implementation**
-- **Framework:** TypeScript with Express.js
-- **Queue System:** Redis Bull queue for asynchronous processing
+- **Framework:** Node.js with Express.js
 - **DNS Provider:** Cloudflare DNS API  
-- **Security:** DNSSEC enforcement, rate limiting, input validation
-- **Monitoring:** Health checks, job status tracking, error handling
+- **Security:** DNSSEC enforcement and verification
 - **Integration:** Greenlight backend for BOLT 12 offer generation
 
 **2. Greenlight Backend Integration**  
@@ -114,29 +112,17 @@ This project develops a non-custodial payment alternative to Shopstr's current C
 }
 ```
 
-**Response (Queued for Processing):**
+**Response (Success):**
 ```json
 {
-  "status": "queued",
-  "job_id": "dns-reg-1234567890",
-  "status_url": "/api/dns/status/dns-reg-1234567890",
-  "estimated_completion": "2-5 minutes"
-}
-```
-
-**Status Check Endpoint:** `GET /status/{job_id}`
-```json
-{
-  "job_id": "dns-reg-1234567890",
-  "status": "completed",
-  "progress": 100,
-  "result": {
-    "username": "user.shopstr.store",
-    "dns_record_id": "cf-rec-abc123",
-    "bolt12_offer": "lno1..."
-  },
-  "created_at": "2025-07-02T12:00:00Z",
-  "completed_at": "2025-07-02T12:02:30Z"
+  "status": "success",
+  "message": "DNS record created successfully",
+  "dns_record": {
+    "name": "user.shopstr.store",
+    "type": "TXT",
+    "content": "bitcoin:lno1...",
+    "ttl": 300
+  }
 }
 ```
 
