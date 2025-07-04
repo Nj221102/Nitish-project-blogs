@@ -171,13 +171,17 @@ This project develops a non-custodial payment alternative to Shopstr's current C
 ### Security Implementation
 
 **Authentication Methods:**
-- Cloudflare API: Secure API key authentication
-- Backend Communication: JWT token validation
-- WebSocket: WSS encrypted connections
-- Client Storage: AES-256 encryption for device credentials
+- **API Security:** Bearer token authentication with rate limiting
+- **Cloudflare API:** Secure API key authentication with zone-level permissions
+- **Backend Communication:** JWT token validation with Redis session management
+- **WebSocket:** WSS encrypted connections with token-based authentication
+- **Client Storage:** AES-256 encryption for device credentials
 
 **DNSSEC Enforcement:**
-- Automated DNSSEC verification on domain registration
+- **Automated Verification:** DNSSEC verification integrated into queue processing
+- **Multi-Resolver Validation:** 80% consensus across multiple DNS resolvers
+- **Cryptographic Signatures:** DNS spoofing protection via DNSSEC signing chain
+- **Production Monitoring:** Real-time DNSSEC status tracking and alerting
 - DNS spoofing protection via cryptographic signatures
 - Secure resolution of BIP-353 usernames
 
@@ -194,11 +198,19 @@ This project develops a non-custodial payment alternative to Shopstr's current C
 ### System Integration Flow
 ```
 1. User creates BIP-39 seed → Client-side generation
-2. Node registration → Greenlight backend
-3. Username selection → BOLT 12 offer generation  
-4. DNS registration → Cloudflare API integration
-5. Real-time updates → WebSocket notifications
+2. Node registration → Greenlight backend  
+3. Username selection → BOLT 12 offer generation
+4. DNS registration request → Redis queue job creation
+5. Asynchronous processing → DNS record + DNSSEC verification
+6. Status polling → Real-time progress updates via API
+7. Completion notification → WebSocket real-time updates
 ```
+
+**Enhanced Workflow Features:**
+- **Non-blocking Operations:** Immediate API responses with job tracking
+- **Progress Monitoring:** Real-time status updates (0-100% completion)
+- **Error Recovery:** Automatic retries with exponential backoff
+- **Horizontal Scaling:** Distributed queue workers for high availability
 
 ### Frontend User Experience
 - **Signup Flow:** BIP-39 seed display with security warnings
@@ -221,3 +233,40 @@ This project serves as both an academic capstone and a practical contribution to
 - **LinkedIn:** [Nitish Jha](https://linkedin.com/in/nitish-jha-2b82aa155)  
 - **GitHub:** [@Nj221102](https://github.com/Nj221102)  
 - **Institution:** Polaris School of Technology
+
+---
+
+## DNS API Production Features
+
+**TypeScript Architecture Benefits:**
+- **Type Safety:** Full compile-time type checking prevents runtime errors
+- **Developer Experience:** Enhanced IDE support with autocomplete and refactoring
+- **Code Quality:** Structured error handling with typed error responses
+- **Maintainability:** Self-documenting code with interfaces and type definitions
+
+**Queue System Implementation:**
+```typescript
+// Redis Bull Queue Configuration
+const dnsQueue = new Queue('dns-registration', {
+  redis: { host: 'localhost', port: 6379 },
+  defaultJobOptions: {
+    attempts: 3,
+    backoff: { type: 'exponential', delay: 2000 },
+    removeOnComplete: 100,
+    removeOnFail: 50
+  }
+});
+
+// Job Progress Tracking
+await job.progress(40); // DNS record creation
+await job.progress(70); // Global propagation verification  
+await job.progress(90); // DNSSEC signing
+await job.progress(100); // Completion
+```
+
+**Security and Monitoring:**
+- **Rate Limiting:** 10 requests per 15-minute window per IP
+- **Input Validation:** Joi schemas for comprehensive data validation
+- **Health Monitoring:** Real-time system status checks for Redis, Cloudflare, and queue
+- **Error Tracking:** Structured logging with Winston for production debugging
+- **API Authentication:** Bearer token validation for all endpoints
