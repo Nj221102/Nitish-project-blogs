@@ -1,8 +1,9 @@
 ---
 layout: page
-title: About SOB25 Project
-subtitle: Building Bitcoin Payment Infrastructure for Shopstr
-cover-img: /assets/img/bgimage.png
+title: About SOB25 & Shopstr
+subtitle: "⚡ Building the future of Bitcoin payments"
+cover-img: /assets/img/path.jpg
+tags: [About, SOB25, Bitcoin, Shopstr, Lightning Network]
 ---
 
 ## 🚀 Summer of Bitcoin 2025

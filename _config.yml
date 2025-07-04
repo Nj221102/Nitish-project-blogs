@@ -16,7 +16,7 @@ title: SOB25 - Shopstr Development Blog
 author: Nitish Jha
 
 # Short description of your site
-description: "Summer of Bitcoin 2025 project log - Building non-custodial payment infrastructure for Shopstr"
+description: "Summer of Bitcoin 2025 project Blog - Building non-custodial payment infrastructure for Shopstr"
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -60,26 +60,61 @@ social-network-links:
   linkedin: nitish-jha-2b82aa155
   rss: true
 
-# SEO and site info
+# GitHub Pages configuration
 url: "https://nj221102.github.io"
 baseurl: "/Nitish-project-blogs"
 repository: "Nj221102/Nitish-project-blogs"
 
+# SEO and metadata
+title-separator: " | "
+description: "SOB25 project updates: Building Bitcoin Lightning payment infrastructure for Shopstr. Technical insights, development progress, and blockchain innovation."
+keywords: "Bitcoin, Lightning Network, SOB25, Shopstr, Payments, Blockchain, Summer of Bitcoin"
+
 # RSS feed description
 rss-description: "SOB25 project updates: Building Bitcoin Lightning payment infrastructure for Shopstr. Technical insights, development progress, and blockchain innovation."
 
-# SOB25 theme colors
+# GitHub Pages optimization
+github_username: Nj221102
+author:
+  name: "Nitish Jha"
+  email: "nitishj221102@gmail.com"
+  github: "Nj221102"
+  linkedin: "nitish-jha-2b82aa155"
+
+# SOB25 Bitcoin-inspired theme colors
 page-col: "#FAFAFA"
 text-col: "#2C3E50"
-link-col: "#F39C12"
+link-col: "#F7931A"
 hover-col: "#E67E22"
-navbar-col: "#34495E"
-navbar-text-col: "#ECF0F1"
-navbar-border-col: "#2C3E50"
+navbar-col: "#FFFFFF"
+navbar-text-col: "#2C3E50"
+navbar-border-col: "#E8E8E8"
 footer-col: "#34495E"
 footer-text-col: "#BDC3C7"
 footer-link-col: "#ECF0F1"
-footer-hover-col: "#F39C12"
+footer-hover-col: "#F7931A"
+
+# Custom fonts and typography
+google_fonts: "Roboto:300,400,500,700|Source+Code+Pro:400,700"
+
+# GitHub Pages Jekyll settings
+remote_theme: "daattali/beautiful-jekyll@6.0.1"
+
+# Exclude files from GitHub Pages build
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - vendor/
+  - .bundle/
+  - .git/
+  - .github/
+  - node_modules/
+  - "*.gemspec"
+  - "*.gem"
 
 ###########################
 # --- General options --- #

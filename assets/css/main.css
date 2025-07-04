@@ -1,0 +1,187 @@
+/* File: assets/css/main.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+/* Bitcoin-inspired SOB25 theme */
+:root {
+  --bitcoin-orange: #F7931A;
+  --bitcoin-orange-light: #FFB347;
+  --bitcoin-orange-dark: #E67E22;
+  --dark-blue: #2C3E50;
+  --light-gray: #F8F9FA;
+  --medium-gray: #6C757D;
+  --success-green: #28A745;
+  --warning-orange: #FD7E14;
+  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,0.15);
+  --border-radius: 8px;
+  --transition: all 0.3s ease;
+}
+
+/* Typography Enhancement */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  line-height: 1.6;
+  color: var(--dark-blue);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--dark-blue);
+}
+
+code, pre {
+  font-family: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Code', monospace !important;
+}
+
+/* Enhanced intro banner */
+.intro-banner {
+  background: linear-gradient(135deg, var(--bitcoin-orange), var(--bitcoin-orange-dark));
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-hover);
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-banner h2 {
+  color: white !important;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.intro-banner p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  margin-bottom: 1.5rem;
+}
+
+/* Progress stats */
+.project-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.stat {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: var(--transition);
+}
+
+.stat:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  font-weight: 500;
+  color: white;
+}
+
+/* Enhanced post cards */
+.post-preview {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border: 1px solid #E8E8E8;
+}
+
+.post-preview:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.post-preview h2 a {
+  color: var(--dark-blue) !important;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.post-preview h2 a:hover {
+  color: var(--bitcoin-orange) !important;
+}
+
+/* Tags styling */
+.blog-tags a {
+  background: var(--light-gray) !important;
+  color: var(--medium-gray) !important;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.blog-tags a:hover {
+  background: var(--bitcoin-orange) !important;
+  color: white !important;
+  text-decoration: none;
+}
+
+/* Enhanced navbar */
+.navbar-custom {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #E8E8E8;
+  box-shadow: var(--shadow);
+}
+
+.navbar-brand {
+  font-weight: 700 !important;
+  color: var(--dark-blue) !important;
+  font-size: 1.5rem !important;
+}
+
+.navbar-nav .nav-link {
+  color: var(--dark-blue) !important;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--bitcoin-orange) !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .intro-banner {
+    padding: 2rem 1rem;
+  }
+  
+  .project-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .post-preview {
+    padding: 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+}
