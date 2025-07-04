@@ -17,6 +17,19 @@
   --transition: all 0.3s ease;
 }
 
+/* Professional color scheme */
+:root {
+  --tech-blue: #1e3a8a;
+  --tech-gray: #374151;
+  --tech-light: #f8fafc;
+  --code-bg: #1f2937;
+  --code-text: #e5e7eb;
+  --accent-orange: #f59e0b;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+}
+
 /* Typography Enhancement */
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
@@ -167,6 +180,256 @@ code, pre {
   color: var(--bitcoin-orange) !important;
 }
 
+/* Professional typography */
+.post-content {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--tech-gray);
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3 {
+  color: var(--tech-blue);
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--tech-light);
+  padding-bottom: 0.5rem;
+}
+
+.post-content h1 {
+  font-size: 2.25rem;
+  border-bottom: 3px solid var(--bitcoin-orange);
+}
+
+.post-content h2 {
+  font-size: 1.875rem;
+  border-bottom: 2px solid var(--bitcoin-orange);
+}
+
+.post-content h3 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--bitcoin-orange);
+}
+
+/* Professional code blocks */
+.post-content pre {
+  background: var(--code-bg) !important;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  overflow-x: auto;
+  position: relative;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.post-content pre code {
+  background: transparent !important;
+  color: var(--code-text) !important;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.post-content code {
+  background: #f3f4f6 !important;
+  color: #1f2937 !important;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Enhanced tables for technical data */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.post-content th {
+  background: var(--tech-blue);
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.post-content td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top;
+}
+
+.post-content tr:hover {
+  background: #f8fafc;
+}
+
+.post-content tr:last-child td {
+  border-bottom: none;
+}
+
+/* Status indicators */
+.status-complete,
+.status-progress,
+.status-planned {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-complete {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-progress {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-planned {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* Technical documentation blocks */
+.post-content blockquote {
+  border-left: 4px solid var(--bitcoin-orange);
+  background: var(--tech-light);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0 8px 8px 0;
+  font-style: normal;
+  position: relative;
+}
+
+.post-content blockquote::before {
+  content: "ℹ️";
+  position: absolute;
+  top: 1rem;
+  left: -2px;
+  background: var(--bitcoin-orange);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+/* Architecture diagrams and code snippets */
+.post-content .architecture-diagram {
+  background: #f8fafc;
+  border: 2px dashed #d1d5db;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--tech-gray);
+}
+
+/* Technical specification lists */
+.post-content ul li {
+  margin-bottom: 0.5rem;
+}
+
+.post-content ul li strong {
+  color: var(--tech-blue);
+  font-weight: 600;
+}
+
+/* Professional navigation breadcrumbs */
+.post-breadcrumb {
+  background: var(--tech-light);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+  color: var(--tech-gray);
+}
+
+.post-breadcrumb a {
+  color: var(--bitcoin-orange);
+  text-decoration: none;
+}
+
+.post-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Enhanced post metadata */
+.post-meta {
+  background: var(--tech-light);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.post-meta .meta-item {
+  display: flex;
+  align-items: center;
+  color: var(--tech-gray);
+}
+
+.post-meta .meta-item i {
+  color: var(--bitcoin-orange);
+  margin-right: 0.5rem;
+}
+
+/* Progress indicators */
+.progress-indicator {
+  background: #e5e7eb;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--bitcoin-orange), var(--bitcoin-orange-dark));
+  transition: width 0.3s ease;
+}
+
+/* Technical badge styling */
+.tech-badge {
+  display: inline-block;
+  background: var(--tech-blue);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tech-badge.api { background: var(--success); }
+.tech-badge.security { background: var(--error); }
+.tech-badge.performance { background: var(--warning); }
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .intro-banner {
@@ -183,5 +446,31 @@ code, pre {
   
   .stat-number {
     font-size: 2rem;
+  }
+  
+  .post-content {
+    font-size: 15px;
+  }
+  
+  .post-content h1 {
+    font-size: 1.875rem;
+  }
+  
+  .post-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .post-content pre {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .post-content table {
+    font-size: 0.875rem;
+  }
+  
+  .post-content th,
+  .post-content td {
+    padding: 0.75rem 0.5rem;
   }
 }

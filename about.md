@@ -10,25 +10,26 @@ tags: [About, SOB25, Bitcoin, Shopstr, Lightning Network]
 
 I'm **Nitish Jha**, a SOB25 participant working on revolutionizing e-commerce payments through Bitcoin Lightning Network integration with Shopstr.
 
-### � Project Overview
+### Technical Objectives
 
-**Mission:** Build a non-custodial Bitcoin Lightning payment layer that enables seamless cryptocurrency transactions while maintaining user sovereignty over their funds.
+**Primary Goal:** Implement production-grade Lightning Network payment infrastructure that preserves Bitcoin's non-custodial principles while providing enterprise-level reliability and user experience.
 
-**Platform:** [Shopstr](https://shopstr.store) - The decentralized marketplace of the future
+**Target Integration:** [Shopstr](https://shopstr.store) marketplace platform
 
-### 🎯 Current Focus: Payment Architecture
+### Current Implementation Status
 
-**🔧 Technical Stack:**
-- **Backend:** Go (Golang) for high-performance APIs
-- **Lightning:** Greenlight nodes for Bitcoin payments  
-- **DNS:** BIP-353 compliant username system
-- **Security:** Non-custodial architecture ensuring user fund control
+**🔧 Technical Architecture:**
+- **Backend Services:** Go microservices with gRPC communication
+- **Lightning Integration:** Greenlight node management and BOLT protocol compliance  
+- **DNS Infrastructure:** BIP-353 compliant username system with DNSSEC automation
+- **Security Framework:** Non-custodial key management with in-memory processing
 
-**📊 Progress Tracker:**
-- ✅ **DNS Management API** - 100% Complete
-- 🚧 **Greenlight Core Services** - 70% Complete  
-- 📋 **Frontend Integration** - Next Phase
-- 🔐 **Security Audit** - Planned
+**📊 Development Progress:**
+- ✅ **DNS Management Infrastructure** - Production deployment ready
+- 🚧 **Lightning Payment Core** - 70% implementation complete  
+- 🚧 **Real-time State Management** - WebSocket and Redis Pub/Sub integration
+- 📋 **Frontend Integration** - Next development phase
+- 🔐 **Security Audit** - Scheduled for completion phase
 
 ### 🛠️ Key Innovations
 
